@@ -1,8 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
+        // Objected Oriented Programming and GitHub practice
 
-        // git practice
-        
+        Dog dog = new Dog("Druzhok");
+        System.out.println(dog); dog.bark();
     }
 }
