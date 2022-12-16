@@ -8,5 +8,6 @@ public class Main {
 
         Cat cat = new Cat("Murka");
         System.out.print(cat); cat.voice();
+
     }
 }
