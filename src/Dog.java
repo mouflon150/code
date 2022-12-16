@@ -1,17 +1,16 @@
-public class Dog implements Voiceable {
-    private final String nickname;
+public class Dog extends Animal implements Voiceable {
 
-    public Dog(String nickname) {
-        this.nickname = nickname;
+    protected Dog(String nickname) {
+        super(nickname);
     }
 
     @Override
     public void voice() {
-        System.out.println("Gaw Gaw");
+        System.out.println("Gaw * Gaw");
     }
 
     @Override
     public String toString() {
-        return "Dog: " + nickname;
+        return "\nDog:\n" + super.toString();
     }
 }

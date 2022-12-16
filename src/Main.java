@@ -4,6 +4,9 @@ public class Main {
         // Objected Oriented Programming and GitHub practice
 
         Dog dog = new Dog("Druzhok");
-        System.out.println(dog); dog.voice();
+        System.out.print(dog); dog.voice();
+
+        Cat cat = new Cat("Murka");
+        System.out.print(cat); cat.voice();
     }
 }
