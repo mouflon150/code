@@ -1,4 +1,4 @@
-public class Dog implements Barkable{
+public class Dog implements Voiceable {
     private final String nickname;
 
     public Dog(String nickname) {
@@ -6,7 +6,7 @@ public class Dog implements Barkable{
     }
 
     @Override
-    public void bark() {
+    public void voice() {
         System.out.println("Gaw Gaw");
     }
 
