@@ -7,7 +7,7 @@ public class Main {
 
         List<Student> students = new ArrayList<>();
         try {
-            students.add(new Student("Marlen", 17));
+            students.add(new Student(null, 17));
             students.add(new Student("Bakyt", -1));
             System.out.println(students);
         } catch (NullPointerException e) {
