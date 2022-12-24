@@ -1,23 +1,16 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) throws MyException {
+    public static void main(String[] args) {
 
-        List<Student> students = new ArrayList<>();
-        try {
-            students.add(new Student(null, 17));
-            students.add(new Student("Bakyt", -1));
-            System.out.println(students);
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        } catch (MyException myException) {
-            System.out.println(myException.getMessage());
-        } finally {
-            System.out.println("End");
+        Random random = new Random();
+        ArrayList<Integer> nums = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            int a = random.nextInt(1, 100);
+            nums.add(a);
         }
+        System.out.println(nums);
     }
 }
-
-
