@@ -1,4 +1,4 @@
-package streamAPI;
+package streams;
 
 import lombok.Data;
 import lombok.ToString;
