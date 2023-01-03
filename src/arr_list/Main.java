@@ -12,10 +12,8 @@ public class Main {
             students.add(new Student("Marlen", -17));
             students.add(new Student(null, 16));
             System.out.println(students);
-        } catch (NullPointerException e) {
+        } catch (NullPointerException | MyException e) {
             System.out.println(e.getMessage());
-        } catch (MyException myException) {
-            System.out.println(myException.getMessage());
         } finally {
             System.out.println("End");
         }

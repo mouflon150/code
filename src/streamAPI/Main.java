@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        int[] arr = new int[]{1, 2, 3, 4};
+//        int[] arr = new int[] {1, 2, 3, 4};
 //        Arrays.stream(arr).forEach((x)->System.out.println(x*x));
 
 //        int[] ints = new int[] {10, 100, 1000};
