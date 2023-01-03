@@ -21,17 +21,17 @@ public class Main {
         students.add(new Student(5, "Kurmanbek Pazylov"));
 
         students.stream()
-                .map(Student::getFullName)
-                .forEach(System.out::println);
+                .map(Student::getFullName);
+//                .forEach(System.out::println);
 
         students.stream()
                 .map(Student::getFullName)
-                .map((x) -> x + x)
-                .forEach(System.out::println);
+                .map((x) -> x + x);
+//                .forEach(System.out::println);
 
         students.stream()
-                .filter(student -> student.getMark() >= 4)
-                .forEach(System.out::println);
+                .filter(student -> student.getMark() >= 4);
+//                .forEach(System.out::println);
 
         System.out.println(students.stream()
                 .filter(student -> student.getMark() == 2).count());

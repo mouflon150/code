@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) throws MyException {
 
         List<Student> students = new ArrayList<>();
+
         try {
             students.add(new Student("Marlen", -17));
             students.add(new Student(null, 16));
