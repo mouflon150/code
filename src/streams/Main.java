@@ -36,6 +36,19 @@ public class Main {
         System.out.println(students.stream()
                 .filter(student -> student.getMark() == 2).count());
 
+        List<Integer> list = new ArrayList<>();
+
+        list.add(3);
+        list.add(5);
+        list.add(9);
+        list.add(11);
+
+        list.stream()
+                .toList()
+                .forEach(integer -> {
+                    int i = (integer % 3 == 0) ? 0 : (integer * 10);
+                    System.out.println(i);
+                });
 
     }
 }
