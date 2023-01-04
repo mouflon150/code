@@ -33,8 +33,8 @@ public class Main {
                 .filter(student -> student.getMark() >= 4);
 //                .forEach(System.out::println);
 
-        System.out.println(students.stream()
-                .filter(student -> student.getMark() == 2).count());
+//        System.out.println(students.stream()
+//                .filter(student -> student.getMark() == 2).count());
 
         List<Integer> list = new ArrayList<>();
 
@@ -43,12 +43,23 @@ public class Main {
         list.add(9);
         list.add(11);
 
-        list.stream()
-                .toList()
-                .forEach(integer -> {
-                    int i = (integer % 3 == 0) ? 0 : (integer * 10);
-                    System.out.println(i);
-                });
+        List<Integer> integers = list.stream()
+                .map(integer -> {
+                    if (integer % 3 == 0) {
+                        integer = 0;
+                    } else {
+                        integer *= 10;
+                    }
+                    return integer;
+                }).toList();
+        System.out.println(integers);
+
+//         list.stream()
+//                .toList()
+//                .forEach(integer -> {
+//                    int i = (integer % 3 == 0) ? 0 : (integer * 10);
+//                    System.out.println(i);
+//                });
 
     }
 }
