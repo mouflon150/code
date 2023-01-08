@@ -28,4 +28,3 @@ public class Main {
         return String.valueOf(stringBuilder);
     }
 }
-
