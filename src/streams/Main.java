@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -52,7 +53,7 @@ public class Main {
                     }
                     return integer;
                 }).toList();
-        System.out.println(integers);
+//        System.out.println(integers);
 
 //         list.stream()
 //                .toList()
@@ -60,6 +61,21 @@ public class Main {
 //                    int i = (integer % 3 == 0) ? 0 : (integer * 10);
 //                    System.out.println(i);
 //                });
+
+        List<Integer> list1 = new ArrayList<>();
+
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+        list1.add(5);
+        list1.add(6);
+
+        Integer max = list1.stream()
+                .filter(integer -> integer % 2 == 0)
+                .map(integer -> (int) Math.pow(integer, 2))
+                .max(Comparator.naturalOrder()).get();
+        System.out.println(max);
 
     }
 }
