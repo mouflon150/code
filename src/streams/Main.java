@@ -22,8 +22,8 @@ public class Main {
         students.add(new Student(5, "Kurmanbek Pazylov"));
 
         students.stream()
-                .map(Student::getFullName);
-//                .forEach(System.out::println);
+                .map(Student::getFullName)
+                .forEach(System.out::println);
 
         students.stream()
                 .map(Student::getFullName)
@@ -71,11 +71,11 @@ public class Main {
         list1.add(5);
         list1.add(6);
 
-        Integer max = list1.stream()
-                .filter(integer -> integer % 2 == 0)
-                .map(integer -> (int) Math.pow(integer, 2))
-                .max(Comparator.naturalOrder()).get();
-        System.out.println(max);
+//        Integer max = list1.stream()
+//                .filter(integer -> integer % 2 == 0)
+//                .map(integer -> (int) Math.pow(integer, 2))
+//                .max(Comparator.naturalOrder()).get();
+//        System.out.println(max);
 
     }
 }

@@ -1,10 +1,8 @@
 package streams;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
-@ToString
 public class Student {
 
     private int mark;
